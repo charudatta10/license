@@ -30,7 +30,7 @@ If you distribute or publish copies or modified versions of this software, you *
    ```text
    Based on 'charudatta10' by Charudatta Gurudas Korde, available at https://github.com/charudatta10/charudatta10. [Modified by <Your Name>]
    ```
-   
+
 3. Provide recipients with a copy of this license.
 
 ---
