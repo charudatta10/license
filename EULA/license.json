@@ -1,0 +1,12 @@
+{
+  "license": "EULA",
+  "description": "End-User License Agreement. This is a restrictive, closed-source license for commercial software.",
+  "permissions": [],
+  "conditions": [],
+  "limitations": [
+    "commercial-use",
+    "distribution",
+    "modification",
+    "private-use"
+  ]
+}

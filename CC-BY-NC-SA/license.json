@@ -1,0 +1,16 @@
+{
+  "license": "CC-BY-NC-SA-4.0",
+  "description": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.",
+  "permissions": [
+    "distribution",
+    "modification",
+    "private-use"
+  ],
+  "conditions": [
+    "include-copyright",
+    "include-license",
+    "share-alike",
+    "non-commercial"
+  ],
+  "limitations": []
+}

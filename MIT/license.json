@@ -1,0 +1,18 @@
+{
+  "license": "MIT",
+  "description": "MIT License.",
+  "permissions": [
+    "commercial-use",
+    "distribution",
+    "modification",
+    "private-use"
+  ],
+  "conditions": [
+    "include-copyright",
+    "include-license"
+  ],
+  "limitations": [
+    "liability",
+    "warranty"
+  ]
+}

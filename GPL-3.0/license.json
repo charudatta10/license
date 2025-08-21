@@ -1,0 +1,22 @@
+{
+  "license": "GPL-3.0",
+  "description": "GNU General Public License v3.0.",
+  "permissions": [
+    "commercial-use",
+    "distribution",
+    "modification",
+    "private-use",
+    "patent-use"
+  ],
+  "conditions": [
+    "include-copyright",
+    "include-license",
+    "share-alike",
+    "disclose-source",
+    "state-changes"
+  ],
+  "limitations": [
+    "liability",
+    "warranty"
+  ]
+}
