@@ -1,0 +1,1 @@
+Licensed under the [Charudatta10 Personal Use Copyleft License 1.0](license.md)

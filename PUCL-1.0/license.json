@@ -1,0 +1,17 @@
+{
+  "name": "Charudatta10 Personal Use Copyleft License 1.0",
+  "id": "PUCL-1.0",
+  "description": "A personal use copyleft license that restricts commercial use.",
+  "how-to-use": "You are granted a limited, non-exclusive, non-transferable license to use, copy, modify, and distribute this software only for personal, non-commercial purposes.",
+  "permissions": [
+    "personal-use",
+    "copyleft"
+  ],
+  "limitations": [
+    "non-commercial"
+  ],
+  "conditions": [
+    "disclose-source",
+    "same-license"
+  ]
+}
