@@ -2,6 +2,8 @@
 
 A **composable, SPDX-compatible licensing framework** that allows projects to define permissions, restrictions, and monetization models by **selecting clauses instead of rewriting licenses**.
 
+![License: MPLS-OSS-MIT](https://img.shields.io/badge/license-MPLS--OSS--MIT-green)
+
 MPLS is designed for:
 
 * Personal / non-commercial projects
