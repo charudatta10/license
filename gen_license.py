@@ -1,3 +1,5 @@
+import sys
+
 CLAUSES = {
     "U1": "Permission is granted to use this Software for personal, private, and non-commercial purposes.",
     "U2": "Permission is granted to use this Software for educational, academic, and research purposes, provided no commercial benefit is derived.",
@@ -21,7 +23,7 @@ CLAUSES = {
 }
 
 def generate_license(spdx_id, clause_ids):
-    body = "\n\n".join(CLAUSES[c] for c in clause_ids)
+    body = "\n\n".join(CLAUSES[c] for c in clause_ids if c in CLAUSES)
     return f"""SPDX-License-Identifier: {spdx_id}
 
 Modular Project License System (MPLS)
@@ -32,8 +34,19 @@ Enabled Clauses:
 {body}
 """
 
+def prompt_selection():
+    print("Available Clauses:")
+    for key, text in CLAUSES.items():
+        print(f"{key}: {text}")
+    print("\nEnter clause IDs separated by spaces (e.g., U1 U2 P0 D2 S1 A1 W1 W2):")
+    user_input = input("> ").strip()
+    return user_input.split()
+
 if __name__ == "__main__":
-    print(generate_license(
-        "LicenseRef-MPLS-DUAL-1",
-        ["U1","U2","U3","U4","P1","D2","S1","A1","W1","W2"]
-    ))
+    if len(sys.argv) > 1:
+        clause_ids = sys.argv[1:]
+    else:
+        clause_ids = prompt_selection()
+
+    spdx_id = "LicenseRef-MPLS-DYNAMIC-1"
+    print(generate_license(spdx_id, clause_ids))
