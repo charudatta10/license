@@ -1,116 +1,224 @@
-# 📜 Charudatta10 License Hub
+# Modular Project License System (MPLS)
 
-![License: CC BY-NC-SA 4.0](./CC-BY-NC-SA/badge.svg)
+A **composable, SPDX-compatible licensing framework** that allows projects to define permissions, restrictions, and monetization models by **selecting clauses instead of rewriting licenses**.
 
-> **Centralized licensing templates, guides, and badges for all `charudatta10` projects.**
+MPLS is designed for:
 
----
-
-## Table of Contents
-
-- [📜 Charudatta10 License Hub](#-charudatta10-license-hub)
-  - [Table of Contents](#table-of-contents)
-  - [About](#about)
-  - [Features](#features)
-  - [License Types Explained](#license-types-explained)
-  - [How to Choose a License](#how-to-choose-a-license)
-  - [How to Add a License](#how-to-add-a-license)
-  - [Contributing](#contributing)
-  - [License](#license)
-  - [Contact](#contact)
+* Personal / non-commercial projects
+* Dual licensing (free + paid commercial)
+* Donationware
+* Open-source (MIT/GPL-style)
+* AI, SaaS, libraries, research, and tooling
 
 ---
 
-## About
+## Why MPLS?
 
-This repository is the **licensing backbone** for all projects under the `charudatta10` namespace. It provides modular license templates, attribution scaffolds, decision trees, SVG badges, and machine-readable metadata for legal clarity and modular governance.
+Traditional licenses are **rigid**.
+Modern projects need **flexibility**.
 
-> **All referenced projects must link back to this repo for license validation and attribution.**
+MPLS solves this by:
 
----
+* Using **modular legal clauses**
+* Supporting **monetization by design**
+* Remaining **SPDX-compatible**
+* Being **machine-readable & generator-friendly**
 
-## Features
-
-- ✅ Modular license templates (PUCL-1.0, CC BY-NC-SA, etc.)
-- 🧩 Attribution scaffolds for remixers and contributors
-- 🔄 Decision trees for selecting appropriate licenses
-- 🏷️ SVG badges for consistent display across repos
-- 📁 Machine-readable license metadata for automation
+> **One base system. Infinite license combinations.**
 
 ---
 
-## License Types Explained
+## Core Principles
 
-**Proprietary Licenses:**  
-Most restrictive; publisher retains full ownership.  
-_Examples: Microsoft Windows, Adobe Photoshop._
-
-**Open Source Licenses:**  
-Allow users to view, modify, and distribute code.
-
-- **Permissive:** Minimal restrictions (MIT, Apache 2.0, BSD).
-- **Copyleft:** Derivatives must use same license (GPL, CC BY-NC-SA, PUCL-1.0, LGPL, MPL).
+* **Modular** – Licenses are built from reusable clauses
+* **Minimal** – Only explicitly enabled permissions apply
+* **Clear** – No hidden rights, no ambiguity
+* **Composable** – Mix non-commercial, paid, OSS, donation clauses
+* **Automatable** – Generate licenses programmatically
 
 ---
 
-## How to Choose a License
+## SPDX Compatibility
 
-1. **Define your goals:**  
-   Do you want maximum freedom (permissive) or ensure openness (copyleft)? Allow commercial use?
-2. **Check dependencies:**  
-   Ensure compatibility with all libraries/frameworks.
-3. **Use a license chooser:**  
-   [choosealicense.com](https://choosealicense.com/)
-4. **Add the license:**  
-   Place the full license text in a `LICENSE` or `LICENSE.md` file.
+MPLS uses valid SPDX custom identifiers:
 
----
+```
+LicenseRef-MPLS
+LicenseRef-MPLS-NC-1
+LicenseRef-MPLS-DUAL-1
+LicenseRef-MPLS-DON-1
+LicenseRef-MPLS-OSS-MIT
+LicenseRef-MPLS-OSS-GPL
+```
 
-## How to Add a License
+Clause-level identifiers are also supported internally:
 
-1. **Add the License File:**  
-   Copy your chosen license text into `LICENSE` or `LICENSE.md`.
-
-2. **Add a License Notice:**  
-   In your `README.md`:
-
-   ```markdown
-   This project is licensed under [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).
-   See the LICENSE file for details.
-   ```
-
-3. **Add Source File Headers:**  
-   At the top of each source file:
-
-   ```python
-   # Copyright (c) 2025 Charudatta Gurudas Korde
-   # Licensed under the CC BY-NC-SA 4.0 license. See LICENSE file for details.
-   ```
-
-4. **(Optional) Add a Badge:**  
-
-   ```markdown
-   ![License: CC BY-NC-SA 4.0](./CC-BY-NC-SA/badge.svg)
-   ```
+```
+LicenseRef-MPLS-Clause-U1
+LicenseRef-MPLS-Clause-P1
+LicenseRef-MPLS-Clause-D4
+```
 
 ---
 
-## Contributing
+## License Structure
 
-Contributions are welcome! Please open issues or pull requests for improvements or new license templates.
+Each MPLS license consists of:
+
+1. **SPDX Identifier**
+2. **Enabled Clause List**
+3. **Legal Text for Each Clause**
+4. **Warranty & Liability Disclaimer**
+
+Any permission **not explicitly granted is prohibited**.
+
+---
+
+## Clause Categories
+
+### Usage
+
+* Personal
+* Educational
+* Commercial (allowed or prohibited)
+
+### Payment
+
+* Free
+* One-time fee
+* Subscription
+* Donationware
+
+### Distribution
+
+* No redistribution
+* Redistribution allowed
+* Modification allowed
+* Copyleft enforcement
+
+### Source Code
+
+* Closed distribution allowed
+* Source disclosure required
+
+### Attribution & Branding
+
+* Attribution required or optional
+* Trademark restrictions
+
+### Warranty & Liability
+
+* No warranty
+* No liability
 
 ---
 
-## License
+## Predefined License Profiles
 
-This repository is licensed under the [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) license.  
-See the LICENSE file for details.
+### MPLS-NC-1 (Personal / Non-Commercial)
+
+Free for personal and educational use.
+Commercial use and redistribution are prohibited.
+
+```
+SPDX-License-Identifier: LicenseRef-MPLS-NC-1
+Clauses: U1, U2, U3, P0, D1, S1, A1, W1, W2
+```
 
 ---
 
-## Contact
+### MPLS-DUAL-1 (Dual License)
 
-Maintained by [Charudatta Gurudas Korde](https://github.com/charudatta10).  
-For questions, open an issue or email: <152109007c@gmail.com>
+Free for non-commercial use.
+Commercial use requires a paid license.
+
+```
+SPDX-License-Identifier: LicenseRef-MPLS-DUAL-1
+Clauses: U1, U2, U3, U4, P1, D2, S1, A1, W1, W2
+```
 
 ---
+
+### MPLS-DON-1 (Donationware)
+
+Free to use with optional donations.
+
+```
+SPDX-License-Identifier: LicenseRef-MPLS-DON-1
+Clauses: U1, U2, U4, P3, D2, S1, A1, W1, W2
+```
+
+---
+
+### MPLS-OSS-MIT (Permissive Open Source)
+
+Equivalent to MIT-style licensing.
+
+```
+SPDX-License-Identifier: LicenseRef-MPLS-OSS-MIT
+Clauses: U1, U2, U4, P0, D2, D3, S1, A1, W1, W2
+```
+
+---
+
+### MPLS-OSS-GPL (Copyleft Open Source)
+
+Equivalent to GPL-style licensing.
+
+```
+SPDX-License-Identifier: LicenseRef-MPLS-OSS-GPL
+Clauses: U1, U2, U4, P0, D2, D3, D4, S2, A1, W1, W2
+```
+
+---
+
+## License Generator
+
+A minimal Python-based generator is included.
+
+### Example
+
+```bash
+python generate_license.py > LICENSE.md
+```
+
+### Generator Inputs
+
+* SPDX Identifier
+* Clause ID list
+
+The generator outputs a **complete, legal-grade license file**.
+
+---
+
+## Recommended Repository Layout
+
+```
+/
+├── LICENSE.md
+├── README.md
+├── generate_license.py
+└── licenses/
+    ├── MPLS-NC-1.md
+    ├── MPLS-DUAL-1.md
+    └── MPLS-OSS-MIT.md
+```
+
+---
+
+## Best Practices
+
+* Always include `SPDX-License-Identifier` at the top of files
+* Clearly summarize the license in `README.md`
+* Use predefined profiles where possible
+* Avoid mixing contradictory clauses
+
+---
+
+## Disclaimer
+
+MPLS is provided as a licensing framework.
+You are responsible for ensuring compliance with local laws and regulations.
+
+
+
