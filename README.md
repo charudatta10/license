@@ -3,6 +3,14 @@
 A **composable, SPDX-compatible licensing framework** that allows projects to define permissions, restrictions, and monetization models by **selecting clauses instead of rewriting licenses**.
 
 ![License: MPLS-OSS-MIT](https://img.shields.io/badge/license-MPLS--OSS--MIT-green)
+![Version](https://img.shields.io/github/v/release/charudatta10/license)
+![License](https://img.shields.io/github/license/charudatta10/license)
+
+## What is this?
+
+MPLS is a composable, SPDX-compatible licensing framework that lets projects define permissions, restrictions, and monetization models by selecting clauses instead of rewriting licenses. It is designed for personal, non-commercial, dual-licensed, donationware, and open-source projects.
+
+## Features
 
 MPLS is designed for:
 
@@ -221,6 +229,10 @@ The generator outputs a **complete, legal-grade license file**.
 
 MPLS is provided as a licensing framework.
 You are responsible for ensuring compliance with local laws and regulations.
+
+## License
+
+This repository is licensed under the terms in [LICENSE.md](LICENSE.md).
 
 
 
