@@ -1,5 +1,10 @@
 # Modular Project License System (MPLS)
 
+<p align="center">
+  <img src="assets/cover.png" alt="license" width="800"/>
+</p>
+
+
 A **composable, SPDX-compatible licensing framework** that allows projects to define permissions, restrictions, and monetization models by **selecting clauses instead of rewriting licenses**.
 
 ![License: MPLS-OSS-MIT](https://img.shields.io/badge/license-MPLS--OSS--MIT-green)
@@ -233,6 +238,5 @@ You are responsible for ensuring compliance with local laws and regulations.
 ## License
 
 This repository is licensed under the terms in [LICENSE.md](LICENSE.md).
-
 
 
