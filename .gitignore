@@ -1,0 +1,18 @@
+# Python-generated files
+__pycache__/
+*.py[cod]
+dist/
+build/
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.log
+.coverage
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Note: templates/ is source code and is intentionally NOT ignored.
